@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud Application</title>
+    <link rel="stylesheet" href="crud.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="add-detail">
+     <h2 class="user_title">
+
+       Welcome&nbsp;&nbsp;&nbsp; <span class="user-name"></span>
+     </h2>
+      <div class="add-data">
+        <h1 class="title"> Crud Application</h1>
+          <div class="name">
+            <label class="name-title"> Phone Number </label>
+            <input
+              type="text"
+              class="input-data"
+              id="Name-input"
+              placeholder="Enter Phone Number"
+        
+            />
+          </div>
+          <div class="Address">
+            <label class="address-title">Address</label>
+            <input
+              type="text"
+              class="input-data"
+              id="address-input"
+              placeholder="Enter Address"
+            
+            />
+          </div>
+          <div class="age">
+            <label class="age-title"> Age</label>
+            <input
+              type="text"
+              class="input-data"
+              id="age-input"
+              placeholder="Enter Age"
+        
+            />
+          </div>
+          <div class="email">
+            <label class="email-title"> Email</label>
+            <input
+              type="text"
+              class="input-data"
+              id="email"
+              placeholder="Enter Email"
+        
+            />
+          </div>
+          <button class="add-Detail-Btn" onclick="crud()">Add Data</button>
+          <!-- <button class="history-Btn" onclick="history()" id="show_history_btn">Show History</button>
+          <button class="history-Btn"  id="hide_history_btn" onclick="">Hide History</button> -->
+           <label for="" class="Empty_error">Invalid Input</label>
+        </div>
+      </div>
+      <div class="table_data">
+        <table class="table-container">
+          <thead class="head">
+            <th class="table-headings">Number</th>
+            <th class="table-headings">Age</th>
+            <th class="table-headings">Address</th>
+            <th class="table-headings">Email</th>
+            <th class="table-headings">
+              Actions  
+            </th>
+          </thead>
+          <tbody class="table-body">    
+          </tbody>
+        </table>
+      </div>
+    <script src="main.js"></script>
+  </body>
+</html>

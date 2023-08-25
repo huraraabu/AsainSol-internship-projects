@@ -1,0 +1,134 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'popphins',sans-serif;
+    background-color: black;
+}
+.user_title
+{
+   color: #fff;
+   margin-left: 29rem;
+   margin-top: 4rem;
+   
+}
+
+.add-data
+{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    row-gap:.5rem;
+    position: relative;
+    left: 13rem;
+    top: 2rem;
+    width: 50%;
+}
+button
+{
+    cursor: pointer;
+}
+.add-data label
+{
+    position: relative;
+    bottom: .006rem;
+    left: .2rem;
+    font-size: 14px;
+    color: #fff;
+}
+.add-data input
+{
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    padding: .5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.add-Detail-Btn
+{
+    width: 15%;
+    padding: 6px;
+    color: #fff;
+    background-color: green;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.history-Btn
+{
+    width: 15%;
+    padding: 6px;
+    color: #fff;
+    background-color: green;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    left: 37rem;
+    bottom: 2rem;
+    display: none;
+}
+.add-data h1{
+    color: #fff;
+    position: relative;
+    left: 15rem;
+}
+.table-container
+{
+    position: absolute;
+    top: 28rem;
+    left: 12rem;
+}
+table
+{
+    border-collapse: separate;
+    border-spacing: 2rem;
+    border-radius: 6px;
+}
+.table-container thead
+{
+    color: #fff;
+    
+}
+#edit-btn
+{
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color:rgba(255, 255, 0, 0.476);
+    color: #fff;
+    border-radius: 4px;
+}
+#delete-btn
+{
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color:rgb(216, 142, 112);
+    color: #fff;
+    border-radius: 4px;
+}
+.table-row
+{
+    color: #fff;
+}
+.Empty_error
+{
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.593);
+  padding:.5rem;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+}
+#show_history_btn
+{
+ display: block;
+}
+
