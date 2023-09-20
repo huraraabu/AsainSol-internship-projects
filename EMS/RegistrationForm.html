@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RegistrationForm.css">
+    <!-- icon link here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--fonts  link here-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+        <!-- SweetAlert CSS -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"
+      />
+  
+      <!-- SweetAlert JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+  
+  </head>
+  <body>
+    <!-- form start here -->
+    <div class="formContainer">
+      <h1 class="title" >Registration</h1>
+    <!-- input tags -->
+        <h2 class="sub-title" >Personal Details</h2>
+        <div class="RegistrationData">
+        <!-- cinc input start from here -->
+        <div class="Cinc-section" id="section">
+          <!-- <span class="Cinc" id="in-label">CINC  <i class="fa-solid fa-id-card"></i></span> -->
+          <input
+          type="text"
+          class="inputDetail"
+          id="cinc-in"
+          />
+        </div>
+        <div class="city-section" id="section">
+          <!-- <lable class="City-name" id="in-label">City Name  <i class="fa-solid fa-city"></i></lable> -->
+          <input
+          type="text"
+          class="inputDetail"
+          id="City-in"
+          />
+        </div>
+        <div class="DOB-section" id="section">
+          <!-- <lable class="Date-Of-Birth" id="in-label">Date Of Birth</lable> -->
+            <input
+            type="date"
+            class="inputDetail"
+            id="DOB-in"
+            />
+          </div>
+          <div class="Gender-section" id="section">
+            <!-- <lable class="Gender">Gender</lable> -->
+            <select id="Select-gender">
+              <option disabled selected value="">Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          
+          <div class="Number-section" id="section">
+           <!-- <lable class="Phone-number">Phone Number <i class="fa-solid fa-phone"></i></lable> -->
+            <input
+            type="text"
+            class="inputDetail"
+            id="Phone-in"
+            />
+          </div>
+        </div>
+        <!-- textarea start from here -->
+        <div class="Message-section" id="section">
+          <!-- <lable class="Message">Message To Admin <i class="fa-solid fa-message"></i></lable> -->
+          <input class="textarea" id="Message-in"></input>
+        </div>
+        <div class="btn">
+          <button class="addDetail" id="Submit-btn" onclick="addDetailForVote()">Submit</button>
+          <button class="addDetail" id="clear-btn" onclick="setVoterDetailEmpty()">Clear</button>
+        </div>
+      <!-- </form> -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

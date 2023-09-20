@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "popphins", sans-serif;
+}
+body
+{
+  --active-card:hsl(223, 77%, 60%);
+  --card:rgb(124, 198, 250);
+  --Approved-partyHead:rgb(133, 209, 179);
+  --pending--:rgba(246, 103, 60, 0.936);
+  --result--:rgb(158, 114, 206);
+}
+#Cards {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 13px;
+  transition: transform 0.4s ease;
+  border: none;
+  outline: none;
+  height: 145px;
+}
+#Cards:hover {
+  transform: scale(1.03);
+  background-color: var(--active-card);
+}
+button,a{
+  cursor: pointer;
+}
+.Voter-card,
+.PartyHead-card,
+.Candidate-card,
+.Pending-PartyHead-card,
+.Result-card,
+.PendingCandidate-card,
+.Detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 16px;
+}
+.Voter-card{
+  background-color: var(--active-card);
+}
+.Candidate-card{
+  background-color: var(--card);
+   
+}
+.PartyHead-card,.Candidate-card{
+background-color: var(--Approved-partyHead);
+}
+.Pending-PartyHead-card,
+.PendingCandidate-card{
+  background-color: var(--card);
+}
+.Result-card{
+  background-color: var(--result--);
+}
+
+.Detail-card,
+.Result-card {
+  gap: 2rem;
+}
+.notification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.notification i {
+    font-size: 16px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RegistrationForm.css" />
+    <!-- SweetAlert CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"
+    />
+
+    <!-- SweetAlert JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+  </head>
+  <body>
+    <!-- form start here -->
+    <div class="formContainer">
+      <h1 class="title">Registration</h1>
+      <!-- <form action="" class="RegistrationFrm"> -->
+      <!-- input tags -->
+      <h2 class="sub-title">Personal Details</h2>
+      <div class="RegistrationData">
+        <!-- cinc input start from here -->
+        <!-- <lable class="Cinc">CINC</lable> -->
+        <input
+          type="text"
+          class="inputDetail"
+          placeholder="Enter CINC"
+          id="cinc-in"
+        />
+        <!-- <lable class="Date-Of-Birth">Date Of Birth</lable> -->
+        <input
+          type="date"
+          class="inputDetail"
+          placeholder="mm/dd/yyyy"
+          id="DOB-in"
+        />
+        <!-- <lable class="Gender">Gender</lable> -->
+        <select id="Select-gender">
+          <option disabled selected value="">Select gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
+        </select>
+        <!-- <lable class="City-name">City Name</lable> -->
+        <input
+          type="text"
+          class="inputDetail"
+          placeholder="Enter  City"
+          id="City-in"
+        />
+        <!-- <lable class="Phone-number">Phone Number</lable> -->
+        <input
+          type="text"
+          class="inputDetail"
+          placeholder="Enter Phone Number"
+          id="Phone-in"
+        />
+        <div class="partyName-input">
+          <lable class="partyName">Party Name</lable>
+          <input type="text" class="party-in" placeholder="Enter Party Name" />
+        </div>
+      </div>
+      <!-- textarea start from here -->
+      <!-- <lable class="Message">Message To Admin</lable> -->
+      <textarea class="textarea" id="Message-in"></textarea>
+      <button class="addDetail" onclick="addDetailForVote()">Submit</button>
+      <button class="addDetail" onclick="setVoterDetailEmpty()">Clear</button>
+      <!-- </form> -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

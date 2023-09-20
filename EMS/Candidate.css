@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    --web-color:#F6F7FB;
+    font-family: "popphins", sans-serif;
+}
+body
+{
+    background-color: var(--web-color);
+}
+.notification .sub-title
+{
+    padding: 1rem;
+}
+.notification span
+{
+    position: relative;
+    bottom: 6px;
+}

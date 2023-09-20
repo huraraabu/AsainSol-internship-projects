@@ -1,0 +1,113 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family:'popphins' sans-serif;
+}
+.formContainer
+{
+  width: 60%;
+  margin: 2rem;
+  margin-left: 15rem;
+  height: 100%;
+  /* background-color: aqua; */
+  padding: 2rem;
+  font-size: 18px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-right: 14px;
+}
+button ,a
+{
+  cursor: pointer;
+}
+.RegistrationData
+{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 2.5rem;
+  column-gap: 10rem;  
+  margin-top: 2rem;
+}
+input
+{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  font-size: 16px;
+}
+label
+{
+  font-weight: 700px  ;
+}
+#Message-in
+{
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  width: 550px;
+}
+#in-label
+{
+  display: flex;
+  position: absolute;
+  gap: 8rem;
+}
+.Date-Of-Birth
+{
+  left: 14rem;
+  top: 16rem;
+}
+
+.title
+{
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+  width: 10%;
+}
+.addDetail
+{
+  width: 10%;
+  border-radius: 40px;
+  height: 40px;
+  font-size: 16px;
+  padding: 0.4rem;
+  /* display: flex; */
+}
+#City-in
+{
+    width: 220px;
+}
+.Phone-number
+{
+ position: absolute;
+ display: flex;
+ gap: 4rem;
+}
+button,a
+{
+  border: none;
+  outline: none;
+}
+.Gender-section
+{
+  display: flex;
+  gap: 3rem;
+}
+.Message
+{
+  position: absolute;
+  display: flex;
+  gap: 24rem;
+  top: 24.5rem;
+}
+#section input~span:focus
+{
+  transform: translateX(10px);
+}

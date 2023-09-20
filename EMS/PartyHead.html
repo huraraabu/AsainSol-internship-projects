@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Party Head Portal</title>
+    <!-- style sheet link here -->
+    <link rel="stylesheet" href="dashBoard.css" />
+    <link rel="stylesheet" href="PartyHead.css" />
+    <link rel="stylesheet" href="Cards.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <!-- icon link here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--fonts  link here-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- SweetAlert CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"
+    />
+    <!-- SweetAlert JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+  
+  </head>
+  <body>
+    <!-- Party head bar start from here -->
+    <div class="partyHead-topbar">
+      <div class="logo-explanation" >
+        <div class="top-logo">EMS</div>
+        <div class="subtitle">Election Managment System</div>
+      </div>
+      <div class="greeting">
+        <h1>Party Head<span></span> Portal</h1>
+      </div>
+      <div class="btn-contanier">
+        <button class="notification" onclick="createNotificationTable()">
+          <i class="fa-solid fa-bell fa-beat"
+            ><span class="Notification-count">0</span>
+          </i>
+        </button>
+        <div class="profile-portal">
+          <div class="admin-image">
+            <img id="profile-image" src="default.jpg" alt="Party Head" />
+          </div>
+          <div class="pro-container">
+            <i class="fa-solid fa-caret-up" id="profile-icon"></i>
+            <div class="profile-section">
+              <div class="profile-head">
+                <h3 class="role"></h3>
+                <h1 class="profile-name"></h1>
+              </div>
+              <div class="profile-body">
+                <div class="profile" onclick="editDetail()">My Profile</div>
+                <div class="Logout-btn" onclick="logoutFromPortal()">
+                  Logout
+                </div>
+                <label
+                  for="file-upload"
+                  class="custom-file-upload"
+                  onclick="setImageInLocalStorage()"
+                >
+                  <input
+                    type="file"
+                    id="file-upload"
+                    name="file"
+                    style="display: none"
+                  />
+                  Upload Profile
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- dashboard start here -->
+    <div class="dashboard-card">
+      <button
+        class="Voter-card"
+        onclick="gotoFilterTable('Voter','No','un','PartyHeadVoter')"
+        id="Cards"
+      >
+        <h4 class="sub-title">
+          Number Of <span class="party-Name"></span> Voters
+        </h4>
+        <i class="fa-solid fa-check-to-slot"></i>
+        <h2 class="title"><span class="party-Voters"></span></h2>
+      </button>
+      <button
+        class="Candidate-card"
+        onclick="gotoFilterTable('Candidate','yes','No','WaitingCandidate')"
+        id="Cards"
+      >
+        <h4 class="sub-title">Number Of Ticket Waiting Candidate</h4>
+        <div class="icons">
+          <i class="fa-solid fa-user-secret"></i>
+          <i class="fa-solid fa-check-double"></i>
+        </div>
+        <h2 class="title" id="title-candidate">
+          <span class="Ticket-waiting-Candidate"></span>
+        </h2>
+      </button>
+      <button
+        class="Candidate-card"
+        onclick="gotoFilterTable('Candidate','yes','yes','PartyHeadOfCandidate')"
+        id="Cards"
+      >
+        <h4 class="sub-title">
+          Number Of <span class="Candidate-party-Name"></span> Candidate
+        </h4>
+        <div class="icons">
+          <i class="fa-solid fa-user-secret"></i>
+          <i class="fa-solid fa-check-double"></i>
+        </div>
+        <h2 class="title" id="title-candidate">
+          <span class="Ticket-Holder-Candidate"></span>
+        </h2>
+      </button>
+      <button
+        class="Detail-card"
+        onclick="gotoPartyHeadRegistrationForm()"
+        id="Cards"
+      >
+        <h4 class="sub-title">Apply As A Party Head</h4>
+        <i class="fa-solid fa-fill"></i>
+      </button>
+      <!-- Card of registration form start from here -->
+      <button class="Result-card" onclick="goToResultPortal()" id="Cards">
+        <h4 class="sub-title">View Result</h4>
+        <i class="fa-solid fa-users-viewfinder"></i>
+      </button>
+    </div>
+    <table class="table">
+      <tbody class="table-body"></tbody>
+    </table>
+    <div class="pagination">
+      <button class="back-btn">
+        <i class="fa-solid fa-angles-left" class="previous" id="icons"></i>
+      </button>
+      <ul class="pagination-list"></ul>
+      <button class="next">
+        <i class="fa-solid fa-angles-right" class="next" id="icons"></i>
+      </button>
+    </div>
+    <div class="table-rows-container">
+      Total Records: <span class="table-rows"></span>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

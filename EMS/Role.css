@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "popphins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  --yellow-color: #f5b237;
+  --green-color: #52ca61;
+  --orange-color: #e04902;
+  --blue-color: #973fff;
+  --pink-color: #cc4898;
+  --cards-color: rgb(24, 23, 24);
+  --bg-color: #050406;
+  --web-color:#F6F7FB; 
+   background-color: var(--web-color);
+}
+.role-data {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+  margin-left: 15rem;
+  width: 68%;
+  background-color: #fff;
+  padding: 1rem;
+}
+.description {
+  display: flex;
+}
+.Admin-card {
+  background-color: var(--web-color);
+  /* color: #fff; */
+}
+.Admin-card:hover {
+  background-color: var(--yellow-color);
+}
+.Admin-card i{
+    color: var(--yellow-color);
+}
+.Admin-card:hover i{
+    color: #fff;
+}
+.Admin-card:hover #Admin{
+    color: #fff;
+}
+#Admin{
+    color: var(--yellow-color);
+}
+.Admin-card:hover .description{
+    color: #fff;
+}
+.PartyHead-card {
+  background-color: var(--web-color);
+}
+.PartyHead-card:hover {
+  background-color: var(--blue-color);
+}
+.PartyHead-card:hover i{
+    color: #fff;
+}
+.PartyHead-card:hover #PartyHead{
+    color: #fff;
+}
+.PartyHead-card i{
+    color: var(--blue-color);
+}
+.PartyHead-card:hover .description{
+    color: #fff;
+}
+#PartyHead
+{
+    color:var(--blue-color);
+}
+
+.Candidate-card {
+  background-color: var(--web-color);
+  /* color: #fff; */
+}
+.Candidate-card:hover {
+  background-color: var(--green-color);
+}
+.Candidate-card i{
+    color: var(--green-color);
+}
+.Candidate-card:hover i{
+    color: #fff;
+}
+.Candidate-card:hover #Candidate{
+    color: #fff;
+}
+.Candidate-card:hover .description{
+    color: #fff;
+}
+#Candidate{
+    color: var(--green-color);
+}
+.Voter-card {
+  background-color: var(--web-color);
+  /* color: #fff; */
+}
+.Voter-card:hover .description{
+    color: #fff;
+}
+.Voter-card i{
+    color: var(--orange-color);
+}
+
+.Voter-card:hover {
+  background-color: var(--orange-color);
+}
+.Voter-card:hover i{
+    color: #fff;
+}
+.Voter-card:hover #Voter{
+    color: #fff;
+}
+
+button,
+a {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+#Cards {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 13px;
+  transition: transform 0.4s ease;
+  /* border: 2px solid brown; */
+}
+#Cards:hover {
+  transform: scale(1.03);
+}
+i {
+  font-size: 50px;
+  padding-bottom: 1rem;
+}
+.heading {
+  position: absolute;
+  left: 29rem;
+  top: 2rem;
+  /* background-color: var(--cards-color); */
+  padding: 11px;
+  border-radius: 6px;
+  background-color:#fff;
+  /* color: #fff; */
+}
+#Voter{
+ color: var(--orange-color);   
+}

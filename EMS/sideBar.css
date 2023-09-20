@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "popphins", sans-serif;
+}
+body
+{
+  --web-color:#F6F7FB;
+}
+.nav-header h1:nth-child(2){
+  display: flex;
+  column-gap: 10px;
+  font-size: 12px;
+  color: #dfe6e9;
+  letter-spacing: .4px;
+  padding: 6px 0;
+  justify-content: center;
+  display: none;
+}
+.nav-header{
+ font-size: 10px;
+}
+.logo-title{
+  text-align: center;
+}
+
+.sideBar-container{
+  position: fixed;
+  overflow-x: hidden;
+  width: 6%;
+  height: 100%;
+  background-color: #2980b9;
+  padding: 5.5rem 10px;
+  transition: all .4s ease;
+  z-index: -1;
+}
+.subtitile{
+  position: absolute;
+  left: 30px;
+}
+#btn-title{
+  display: none;
+}
+
+.navBody button{
+  width: 100%;
+  margin: 28px 0;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  cursor: pointer;
+  padding: 10px 0;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #ddd;
+}
+.navBody button:hover{
+  background-color:var(--web-color) ;
+}
+.navBody button:focus{
+  background-color: white;
+  color: black;
+}

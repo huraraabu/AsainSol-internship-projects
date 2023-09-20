@@ -1,0 +1,38 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "popphins", sans-serif;
+}
+button,a 
+{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .5rem;
+    padding-right: 1rem;
+    background-color: white;
+    margin-left: .8rem;
+}
+body{
+    --yellow-color: #f5b237;
+  --green-color: #52ca61;
+  --orange-color: #e04902;
+  --blue-color: #973fff;
+  --pink-color: #cc4898;
+  --cards-color: rgb(24, 23, 24);
+  --bg-color: #050406;
+    --web-color:#F6F7FB;   
+    background-color: var(--web-color);
+}
+.notification .sub-title
+{
+    padding: 1rem;
+    /* background-color: aqua; */
+}
+.notification span
+{
+    position: relative;
+    bottom: 6px;
+    size: 50px;
+}

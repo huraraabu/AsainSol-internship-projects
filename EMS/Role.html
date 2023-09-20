@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMS ROLE</title>
+    <!-- icon link here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--fonts  link here-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Role.css" />
+  </head>
+  <body>
+    <div class="heading">
+    <h1 class="title">PLEASE SELECT YOUR ROLE</h1>
+    </div>
+    <div class="Role-container">
+      <!-- voter card start here -->
+      <div class="role-data">
+        <button class="Voter-card" onclick="setRole('Voter')" id="Cards">
+          <div class="icon">
+            <i class="fa-solid fa-check-to-slot fa-shake"></i>
+          </div>
+          <p class="description">
+            As a Voter! Your voice matters here. Explore candidates and issues,
+            then cast your vote securely to shape the future you want. Thank you
+            for being an active participant in democracy.
+          </p>
+          <div class="role-btn" id="Voter">Voter</div>
+        </button>
+        <!-- candidate card start here -->
+        <button class="Candidate-card" onclick="setRole('Candidate')" id="Cards">
+          <div class="icon">
+            <i class="fa-solid fa-person"></i>
+          </div>
+          <p class="description">
+            As a Candidate! You're now a key player in the democratic process.
+            Use this platform to share your vision, connect with voters, and
+            make a difference. Your journey as a representative starts here.
+          </p>
+          <div class="role-btn" id="Candidate">Candidate</div>
+        </button>
+        <!-- party head start here -->
+        <button class="PartyHead-card" onclick="setRole('PartyHead')" id="Cards">
+          <div class="icon">
+            <i class="fa-solid fa-people-roof"></i>
+          </div>
+          <p class="description">
+            As a Party Head! You drive political diversity and choices.
+            Nominate, support campaigns, and shape the nation's path. Your role
+            matters in strengthening democratic values.
+          </p>
+          <div class="role-btn" id="PartyHead">PartyHead</div>
+        </button>
+        <!-- admin card start here -->
+        <button class="Admin-card" onclick="setRole('Admin')" id="Cards">
+          <div class="icon">
+            <i class="fa-solid fa-user-secret"></i>
+          </div>
+          <p class="description">
+            As a Admin! You're the engine behind our Election Management System,
+            ensuring fairness and accuracy. Manage registrations, approvals, and
+            more to uphold the integrity of democracy.
+          </p>
+          <div class="role-btn" id="Admin">
+            Admin
+          </div>
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

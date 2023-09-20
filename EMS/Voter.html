@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voter Portal</title>
+    <!-- style link here -->
+    <link rel="stylesheet" href="Voter.css" />
+    <link rel="stylesheet" href="dashBoard.css"/>
+    <link rel="stylesheet" href="Cards.css">
+    <link rel="stylesheet" href="navbar.css">
+    <!-- icon link here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--fonts  link here-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+       <!-- SweetAlert CSS -->
+       <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"
+     />
+ 
+     <!-- SweetAlert JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+  </head>
+  <body>
+    <!-- nav bar start from here -->
+    <div class="topbar" id="Voter-Bar">
+      <div class="logo-explanation" >
+        <div class="top-logo">EMS</div>
+        <span class="subtitle">Election Managment System</span>
+      </div>
+      <div class="greeting">
+        <h1>Voter <span></span>Portal</h1>
+      </div>
+      <div class="profile-portal">
+        <div class="admin-image">
+          <img
+          id="profile-image"
+          src="default.jpg"
+          alt="Candidate"
+          >
+        </div>
+        <div class="pro-container">
+          <i class="fa-solid fa-caret-up" id="profile-icon"></i>
+          <div class="profile-section">
+            <div class="profile-head">
+              <h3 class="role"></h3>
+              <h1 class="profile-name"></h1>
+            </div>
+            <div class="profile-body">
+              <div class="profile" onclick="editDetail()">My Profile</div>
+              <div class="Logout-btn" onclick="logoutFromPortal()">Logout</div>
+              <label for="file-upload" class="custom-file-upload" onclick="setImageInLocalStorage()">
+                <input
+                type="file"
+                id="file-upload"
+                name="file"
+                style="display: none"
+                />
+                Upload Profile
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- add detail start here -->
+    <div class="dashboard-card" id="Voters-card">
+      <!-- Candidate Detail start here -->
+      <button
+        class="Candidate-card"
+        onclick="gotoFilterTable('Candidate','yes','yes','Voter')"
+        id="Cards"
+        >
+        <h4 class="sub-title">Number Of Candidate In Your City</h4>
+        <i class="fa-solid fa-user-secret"></i>
+        <h2 class="title" id="title-candidate">
+          <span class="City-Candidates">0</span>
+        </h2>
+      </button>
+      <!-- Card of registration form start from here -->
+      <button class="Detail-card" onclick="gotoRegistrationForm()" id="Cards">
+        <h4 class="sub-title">Add Details For Vote</h4>
+        <i class="fa-solid fa-fill"></i>
+      </button>
+      <!-- Card of registration form start from here -->
+      <button class="Result-card" onclick="goToResultPortal()" id="Cards">
+        <h4 class="sub-title">View Result</h4>
+        <i class="fa-solid fa-users-viewfinder"></i>
+      </button>
+    </div>
+    <button class="Logout"  onclick="logoutFromPortal()">
+      <i class="fa-solid fa-arrow-up-from-bracket" id="Voter-logout"></i>
+      <div class="Logout-btn" >Logout</div>
+    </button>
+    <table class="table">
+      <tbody class="table-body"></tbody>
+    </table>
+  <!-- start pagination from here -->
+    <div class="pagination">
+      <button class="back-btn">
+        <i class="fa-solid fa-angles-left" class="previous" id="icons"></i>
+      </button>
+      <ul class="pagination-list"></ul>
+      <button class="next">
+        <i class="fa-solid fa-angles-right" class="next" id="icons"></i>
+      </button>
+    </div>
+    <div class="table-rows-container">
+      Total Records: <span class="table-rows"></span>
+    </div>
+    <!-- java script file link here -->
+    <script src="main.js"></script>
+  </body>
+</html>

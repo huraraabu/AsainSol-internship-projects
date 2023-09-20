@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+     font-family: "popphins", sans-serif;
+}
+body
+{
+    --blue-color: #2980b9;
+}
+.topbar{
+    display: flex;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    padding-left: 6rem;       
+    /* gap: 28.5rem; */
+    z-index: 1;
+    justify-content: space-between;
+}   
+.partyHead-topbar
+{
+    display: flex;
+    background-color: #ffffff;
+    position: absolute;
+    width: 92%;
+    padding: 10px;
+    padding-left: 6rem;       
+    /* gap: 25rem; */
+    z-index: 1;
+    justify-content: space-between;
+}
+#Voter-Bar{ 
+    width: 92%;
+    /* padding: 3px; */
+} 
+.btn-contanier
+{
+    display: flex;
+    position: relative;
+}
+.profile-portal
+{
+    cursor: pointer;
+}
+.profile-portal:hover .pro-container{
+    display: block;
+}
+.Notification-count
+{
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    border-radius: 50%;
+    color:#DC4C64;
+    position: relative;
+    bottom: 7px;
+}
+button{
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+}
+.notification
+{
+    /* background-color: #2980b9; */
+    padding: 1rem;
+}
+.profile-section {
+    background-color: #fff;     
+    width: 200px;
+    border-radius: 10px;
+}
+.pro-container
+{ 
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    display: none;
+    z-index: 1;
+}
+.custom-file-upload
+{
+    cursor: pointer;
+    padding: .5rem;
+    padding-left:8px;
+}
+.menu{
+  margin-left: -76px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.logo-explanation{
+    margin-left: -76px;
+}
+.top-logo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.admin-image
+{
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.admin-image img{
+    width: 100%;
+    border-radius: 50%;
+}
+.profile-head
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ffffff;
+    padding: 1rem;
+    background-color:rgb(86, 122, 237);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+#profile-icon{
+    font-size: 2rem;
+    color: rgb(86, 122, 237);
+    position: relative;
+    left: 10.5rem;
+    top: 0.9rem;
+}
+.profile-body
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.profile-body div:hover{
+  background-color: #F6F7FB; 
+}
+.custom-file-upload:hover
+{
+    background-color: #F6F7FB;
+}
+.profile-body div{
+    padding: .5rem;
+    border-radius: 2px;
+}
+.logo-div{
+    display: flex;
+}
